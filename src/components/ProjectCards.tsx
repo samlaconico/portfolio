@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import haruhi from '/src/assets/haruhi.png'
-
 import haruhigif from '/src/assets/haruhi.gif'
 
 type ProjectCardParams = {
