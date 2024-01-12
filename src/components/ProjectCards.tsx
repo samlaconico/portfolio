@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import haruhi from '/src/assets/haruhi.png'
-import haruhigif from '/src/assets/haruhi.gif'
+import haruhi from '/src/assets/horrorgame.png'
+import haruhigif from '/src/assets/horrorgame.gif'
 
 type ProjectCardParams = {
     title:string,
@@ -14,7 +14,6 @@ function ProjectCards({title, img, description}:ProjectCardParams) {
     const [image, setImage] = useState(haruhi);
     const changeImage = () => {
         if (image != haruhigif) {
-
             setImage(haruhigif)
         } else {
             setImage(haruhi);
