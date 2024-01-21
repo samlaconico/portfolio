@@ -6,7 +6,7 @@ type HeaderParams = {
     title:string
 }
 
-function Header({title}:HeaderParams) {
+export function Header({title}:HeaderParams) {
 
     const[nav, useNav] = useState(false);
 
@@ -31,9 +31,9 @@ function Header({title}:HeaderParams) {
             
             
             <div className="hidden lg:flex top-0 items-center ml-0 md:ml-auto text-2xl md:text-3xl font-medium lg:pr-6 lg:ml-auto transition-all ease-in">
-                <a href="#home" className="px-3 hover:text-neutral-900 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Resume</a>
-                <a href="#portfolio" className="px-3 hover:text-neutral-900 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Projects</a>
-                <a href="#links" className="px-3 hover:text-neutral-900 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Links</a>
+                <a href="#home" className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Resume</a>
+                <a href="#portfolio" className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Projects</a>
+                <a href="#links" className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Links</a>
             </div>
 
             <div onClick={setNav} className="hover:cursor-pointer z-50 ml-auto pr-5 text-4xl lg:hidden">

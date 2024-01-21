@@ -1,7 +1,7 @@
 import React from "react"
 
 
-function AboutMe() {
+export function AboutMe() {
     return (
         <div className="w-full h-auto py-10 justify-center flex ">
                 <div className="flex flex-col max-w-[1000px] py-6 text-xl md:text-3xl font-light leading-8 md:leading-10 text-center justify-center items-center text-white">

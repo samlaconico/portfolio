@@ -1,22 +1,21 @@
 import React, { useState } from "react"
-import haruhi from '/src/assets/horrorgame.png'
-import haruhigif from '/src/assets/horrorgame.gif'
 
 type ProjectCardParams = {
     title:string,
     img:string,
+    gif:string
     description:string,
 }
 
 
-function ProjectCards({title, img, description}:ProjectCardParams) {
+export function ProjectCards({title, img, gif, description}:ProjectCardParams) {
 
-    const [image, setImage] = useState(haruhi);
+    const [image, setImage] = useState(img);
     const changeImage = () => {
-        if (image != haruhigif) {
-            setImage(haruhigif)
+        if (image != gif) {
+            setImage(gif)
         } else {
-            setImage(haruhi);
+            setImage(img);
         }
     }
 
