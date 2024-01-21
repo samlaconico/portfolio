@@ -6,6 +6,7 @@ import petspace from '/src/assets/petspace.png'
 import petspacegif from '/src/assets/petspacegif.gif'
 
 const ProjectData = {
+    
 }
 
 export function Projects() {
