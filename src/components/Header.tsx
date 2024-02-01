@@ -31,8 +31,9 @@ export function Header({title}:HeaderParams) {
             
             
             <div className="hidden lg:flex top-0 items-center ml-0 md:ml-auto text-2xl md:text-3xl font-medium lg:pr-6 lg:ml-auto transition-all ease-in">
-                <a href="#home" className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Resume</a>
-                <a href="#portfolio" className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Projects</a>
+                <a href="" className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Resume</a>
+                <a href="#about-me" className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">About Me</a>
+                <a href="#projects" className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Projects</a>
                 <a href="#links" className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Links</a>
             </div>
 
@@ -40,9 +41,10 @@ export function Header({title}:HeaderParams) {
                 <TiThMenu/>
             </div>
 
-            <ul className={nav ? "absolute top-full left-0 w-full auto bg-gray-600 justify-center text-center flex flex-col items-center " : "hidden top-0 "}>
+            <ul onClick={setNav} className={nav ? "absolute top-full left-0 w-full auto bg-gray-600 justify-center text-center flex flex-col items-center " : "hidden top-0 "}>
                 <li className="py-6 font-bold text-3xl"><a href="https://www.google.com">Resume</a></li>
-                <li className="py-6 font-bold text-3xl"><a href="https://www.google.com">Projects</a></li>
+                <li className="py-6 font-bold text-3xl"><a href="#about-me">About Me</a></li>
+                <li className="py-6 font-bold text-3xl"><a href="#projects">Projects</a></li>
                 <li className="py-6 font-bold text-3xl"><a href="https://www.google.com">Links</a></li>
             </ul>
         </div>
