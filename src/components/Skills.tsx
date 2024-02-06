@@ -20,39 +20,39 @@ export function Skills() {
                 <h3 className="pt-4"> Some of my experience includes</h3>
             </div>
                 <div className="grid-cols-2 md:grid-cols-3 grid gap-y-10 place-items-center text-center justify-between">
-                    <div className="bg-neutral-700 shadow-2xl rounded-md h-56 w-56">
+                    <div className="bg-neutral-700 drop-shadow-lg rounded-md h-36 w-36 md:h-56 md:w-56 hover:drop-shadow-glow transition-all duration-150 hover:scale-105 hover:rotate-2 ease-in-out">
                         <h3 className="text-white font-extrabold py-2" >HTML5</h3>
                         <img className="px-8" src={htmlimg}></img>
                     </div>
-                    <div className="bg-neutral-700 shadow-2xl rounded-md h-56 w-56">
+                    <div className="bg-neutral-700 drop-shadow-lg rounded-md h-36 w-36 md:h-56 md:w-56 hover:drop-shadow-glow transition-all duration-150 hover:scale-105 hover:rotate-2 ease-in-out">
                         <h3 className="text-white font-extrabold py-2" >CSS</h3>
                         <img className="px-8" src={cssimg}></img>
                     </div>
-                    <div className="bg-neutral-700 shadow-2xl rounded-md h-56 w-56">
+                    <div className="bg-neutral-700 drop-shadow-lg rounded-md h-36 w-36 md:h-56 md:w-56 hover:drop-shadow-glow transition-all duration-150 hover:scale-105 hover:rotate-2 ease-in-out">
                         <h3 className="text-white font-extrabold py-2" >Javascript</h3>
                         <img className="px-8" src={javascriptimg}></img>
                     </div>
-                    <div className="bg-neutral-700 shadow-2xl rounded-md h-56 w-56">
+                    <div className="bg-neutral-700 drop-shadow-lg rounded-md h-36 w-36 md:h-56 md:w-56 hover:drop-shadow-glow transition-all duration-150 hover:scale-105 hover:rotate-2 ease-in-out">
                         <h3 className="text-white font-extrabold py-2" >React</h3>
                         <img className="px-8" src={reactimg}></img>
                     </div>
-                    <div className="bg-neutral-700 shadow-2xl rounded-md h-56 w-56">
+                    <div className="bg-neutral-700 drop-shadow-lg rounded-md h-36 w-36 md:h-56 md:w-56 hover:drop-shadow-glow transition-all duration-150 hover:scale-105 hover:rotate-2 ease-in-out">
                         <h3 className="text-white font-extrabold py-2" >C++</h3>
                         <img className="px-8 " src={cppimg}></img>
                     </div>
-                    <div className="bg-neutral-700 shadow-2xl rounded-md h-56 w-56">
+                    <div className="bg-neutral-700 drop-shadow-lg rounded-md h-36 w-36 md:h-56 md:w-56 hover:drop-shadow-glow transition-all duration-150 hover:scale-105 hover:rotate-2 ease-in-out">
                         <h3 className="text-white font-extrabold py-2" >Java</h3>
                         <img className="px-8" src={javaimg}></img>
                     </div>
-                    <div className="bg-neutral-700 shadow-2xl rounded-md h-56 w-56">
+                    <div className="bg-neutral-700 drop-shadow-lg rounded-md h-36 w-36 md:h-56 md:w-56 hover:drop-shadow-glow transition-all duration-150 hover:scale-105 hover:rotate-2 ease-in-out">
                         <h3 className="text-white font-extrabold py-2" >Tailwind</h3>
                         <img className="px-8" src={tailwindimg}></img>
                     </div>
-                    <div className="bg-neutral-700 shadow-2xl rounded-md h-56 w-56">
+                    <div className="bg-neutral-700 drop-shadow-lg rounded-md h-36 w-36 md:h-56 md:w-56 hover:drop-shadow-glow transition-all duration-150 hover:scale-105 hover:rotate-2 ease-in-out">
                         <h3 className="text-white font-extrabold py-2" >Github</h3>
                         <img className="px-8" src={githubimg}></img>
                     </div>
-                    <div className="bg-neutral-700 shadow-2xl rounded-md h-56 w-56">
+                    <div className="bg-neutral-700 drop-shadow-lg rounded-md h-36 w-36 md:h-56 md:w-56 hover:drop-shadow-glow transition-all duration-150 hover:scale-105 hover:rotate-2 ease-in-out">
                         <h3 className="text-white font-extrabold py-2" >MongoDB</h3>
                         <img className="px-8" src={mongodbimg}></img>
                     </div>
