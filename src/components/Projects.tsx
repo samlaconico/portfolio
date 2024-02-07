@@ -11,10 +11,11 @@ const ProjectData = {
 
 export function Projects() {
     return (
-        <div id="projects" className="px-8 md:px-48 w-full h-screen text-center">
+        <div id="projects" className="px-8 md:px-48 flex flex-col py-12 justify-center w-full h-screen text-center">
 
-            <div className="pb-7 text-white text-center">
+            <div className="pb-7 text-white text-center z-10">
                 <h1 className="text-4xl font-bold border-b-4 border-b-indigo-400 inline">Projects</h1>
+                <h3 className="pt-4"> Projects I've worked on </h3>
             </div>
 
             <div className="flex-col">

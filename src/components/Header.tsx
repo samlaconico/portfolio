@@ -32,9 +32,9 @@ export function Header({title}:HeaderParams) {
             
             <div className="hidden lg:flex top-0 items-center ml-0 md:ml-auto text-2xl md:text-3xl font-medium lg:pr-6 lg:ml-auto transition-all ease-in">
                 <a href="" className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Resume</a>
-                <a href="#about-me" className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">About Me</a>
-                <a href="#projects" className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Projects</a>
-                <a href="#links" className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Links</a>
+                <button onClick={() => {const element = document.getElementById('about-me'); element?.scrollIntoView({behavior: 'smooth'})}} className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">About Me</button>
+                <button onClick={() => {const element = document.getElementById('projects'); element?.scrollIntoView({behavior: 'smooth'})}} className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Projects</button>
+                <button onClick={() => {const element = document.getElementById('about-me'); element?.scrollIntoView({behavior: 'smooth'})}} className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Links</button>
             </div>
 
             <div onClick={setNav} className="hover:cursor-pointer z-50 ml-auto pr-5 text-4xl lg:hidden">
