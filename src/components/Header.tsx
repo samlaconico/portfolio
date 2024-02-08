@@ -10,7 +10,8 @@ export function Header({title}:HeaderParams) {
 
     const[nav, useNav] = useState(false);
     const navRef = useRef(nav);
-
+    const [bg, setBg] = useState(false);
+    
     const setNav = () => {
         navRef.current = !nav;
         useNav(!nav);
@@ -19,8 +20,6 @@ export function Header({title}:HeaderParams) {
         }
     }
 
-    const [bg, setBg] = useState(false);
-    
     const changeBg = () => {
         console.log(navRef.current)
         
@@ -53,7 +52,7 @@ export function Header({title}:HeaderParams) {
                 <TiThMenu/>
             </div>
 
-            <ul onClick={setNav} className={nav ? "absolute top-full left-0 w-full auto bg-neutral-900 justify-center text-center flex flex-col items-center " : "hidden top-0 "}>
+            <ul onClick={setNav} className={nav ? "absolute top-full left-0 w-full auto bg-neutral-900 justify-center text-center flex flex-col items-center rounded-b-2xl " : "hidden top-0 "}>
                 <li className="py-6 font-bold text-3xl"><button onClick={() => {const element = document.getElementById('about-me'); element?.scrollIntoView({behavior: 'smooth'})}} className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">About Me</button></li>
                 <li className="py-6 font-bold text-3xl"><button onClick={() => {const element = document.getElementById('projects'); element?.scrollIntoView({behavior: 'smooth'})}} className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Projects</button></li>
                 <li className="py-6 font-bold text-3xl"><button onClick={() => {const element = document.getElementById('about-me'); element?.scrollIntoView({behavior: 'smooth'})}} className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000">Links</button></li>

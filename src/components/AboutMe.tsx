@@ -11,7 +11,7 @@ export function AboutMe() {
                         <h1 className="text-3xl lg:text-4xl font-bold border-b-4 border-b-indigo-400 inline">About Me</h1>
                     </div>
                     <div>
-                        <img className="rounded-[360px] border-indigo-400 border-4 my-6" src={"https://pbs.twimg.com/profile_images/1447111107412312068/OqwCuFnd_400x400.jpg"}></img>
+                        <img className="rounded-full border-indigo-400 border-4 my-6" src={"https://pbs.twimg.com/profile_images/1447111107412312068/OqwCuFnd_400x400.jpg"}></img>
                     </div>
                     <div className="mx-10 px-3 md:px-8 ">
                         <p>
@@ -22,7 +22,6 @@ export function AboutMe() {
                         </p>
                     </div>
                 </div>
-
                 <div className='bg-neutral-950/75 filter backdrop-blur-md absolute top-0 left-0 w-full object-cover h-full object-center lg:object-left transition-all z-0'></div>
         </div>
         </>

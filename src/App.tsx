@@ -15,8 +15,8 @@ function App() {
 
   return (
     <div className="overscroll-x-none">
+      
       <Header title={"Pookiefolio"}/>
-
       <Home/>
       <AboutMe/>
       <Skills/>
