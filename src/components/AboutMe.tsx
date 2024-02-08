@@ -5,7 +5,7 @@ import background from '/src/assets/background2.gif'
 export function AboutMe() {
     return (
         <>
-        <div id="about-me" className="snap-center relative w-full md:h-screen overflow-hidden h-auto py-10 justify-center flex bg-center bg-no-repeat bg-cover" style={{backgroundImage: `url(${background})`, }}>
+        <div id="about-me" className="relative w-full md:h-screen overflow-hidden h-auto py-10 justify-center flex bg-center bg-no-repeat bg-cover" style={{backgroundImage: `url(${background})`, }}>
                 <div className="flex flex-col max-w-[1000px] py-6 text-xl lg:text-3xl font-light leading-8 md:leading-10 text-center justify-center items-center text-white z-20">
                     <div className="pb-4 text-left">
                         <h1 className="text-3xl lg:text-4xl font-bold border-b-4 border-b-indigo-400 inline">About Me</h1>
