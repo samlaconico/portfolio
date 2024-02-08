@@ -14,13 +14,13 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="overscroll-x-none">
+    <div className="overscroll-y-scroll snap-mandatory snap-y">
       <Header title={"Pookiefolio"}/>
 
       <img className="w-full object-cover h-screen object-center lg:object-left transition-all"src={background}></img>
       <div className='bg-slate-600/50 absolute top-0 left-0 w-full object-cover h-screen object-center lg:object-left transition-all'></div>
 
-      <div className='w-full h-screen absolute top-0 left-0'>
+      <div id="home" className='w-full h-screen absolute top-0 left-0 snap-center'>
         <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center items-center text-white'>
           <h1 className='text-3xl md:text-6xl text-center font-bold pb-3'>Sam Laconico</h1>
           <h2 className='text-2xl md:text-3xl'>Creative. Programmer. Pookie</h2>
@@ -37,7 +37,6 @@ function App() {
       <AboutMe/>
       <Skills/>
       <Projects/>
-      <AboutMe/>
 
     </div>
   )
