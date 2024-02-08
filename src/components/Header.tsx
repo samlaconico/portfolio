@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useEffect, useState, useRef} from "react"
 import { TiThMenu } from "react-icons/ti";
 
 
@@ -9,23 +9,33 @@ type HeaderParams = {
 export function Header({title}:HeaderParams) {
 
     const[nav, useNav] = useState(false);
+    const navRef = useRef(nav);
 
     const setNav = () => {
+        navRef.current = !nav;
         useNav(!nav);
-        setBg(!nav);
+        if (window.scrollY <= window.innerHeight*.65) {
+            setBg(!nav);
+        }
     }
 
     const [bg, setBg] = useState(false);
     
     const changeBg = () => {
-        if (window.scrollY >= window.innerHeight*.65) {
-            setBg(true);
-        } else {
-            setBg(false);
+        console.log(navRef.current)
+        
+        if (!navRef.current) {
+            if (window.scrollY >= window.innerHeight*.65) {
+                setBg(true);
+            } else {
+                setBg(false);
+            }
         }
     }
 
-    window.addEventListener("scroll", changeBg)
+    useEffect(() => {
+        window.addEventListener("scroll", changeBg);
+    }, [navRef.current]);
 
     return (
         <div className={bg ? "top-0 px-2 z-50 fixed w-full flex text-white items-center md:flex-row transition-all bg-neutral-900 ease-in-out" : "top-0 px-2 z-50 fixed w-full flex text-white items-center md:flex-row transition-all ease-in-out"} >
