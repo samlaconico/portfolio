@@ -5,11 +5,11 @@ type ProjectCardParams = {
     img:string,
     gif:string
     description:string,
+    tech:string,
 }
 
 
-export function ProjectCards({title, img, gif, description}:ProjectCardParams) {
-
+export function ProjectCards({title, img, gif, description, tech}:ProjectCardParams) {
     const [image, setImage] = useState(img);
     const changeImage = () => {
         if (image != gif) {
@@ -21,9 +21,16 @@ export function ProjectCards({title, img, gif, description}:ProjectCardParams) {
 
     return (
         <div className="bg-white max-w-[35rem] h-[30rem] rounded-xl items-start content-start text-center justify-start flex-col shadow-xl transition-all duration-150 hover:scale-105 ease-in-out">
-            <img className="object-cover object-center drp  w-full h-3/5 rounded-t-xl" onMouseOut={changeImage} onMouseOver={changeImage} src={image}></img>
-            <h1 className="text-3xl max-h-[100px] font-semibold pt-2">{title}</h1>
-            <p className="overflow-y-scroll max-h-[8rem] py-2 px-6">
+            <img 
+                className="object-cover object-center drp  w-full h-3/5 rounded-t-xl" 
+                onMouseOut={changeImage} 
+                onMouseOver={changeImage} 
+                src={image}>
+            </img>
+            <h1 className="text-3xl max-h-[100px] font-semibold pt-2">
+                {title}
+            </h1>
+            <p className="overflow-y-scroll max-h-[8rem] py-2 px-6 font-light">
                 {description}
             </p>
         </div>

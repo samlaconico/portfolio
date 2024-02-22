@@ -17,11 +17,13 @@ function App() {
     <div className="overscroll-x-none">
       
       <Header title={"Pookiefolio"}/>
-      <Home/>
-      <AboutMe/>
-      <Skills/>
-      <Projects/>
-
+      
+      <div className="">
+        <Home/> 
+        <AboutMe/> 
+        <Skills/> 
+        <Projects/>
+      </div>
     </div>
   )
 }
