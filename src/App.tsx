@@ -14,15 +14,22 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="overscroll-x-none">
-      
-      <Header title={"Pookiefolio"}/>
-      
-      <div className="">
-        <Home/> 
-        <AboutMe/> 
-        <Skills/> 
-        <Projects/>
+    <div className="overflow-x-hidden">
+
+      <Header title='Portfolio'/>
+      <div className="overflow-y-scroll snap-proximity md:snap-mandatory snap-y w-full h-screen">
+        <div className='snap-center'> 
+          <Home/> 
+        </div>
+        <div className='snap-center'> 
+          <AboutMe/> 
+        </div>
+        <div className='snap-center'> 
+          <Skills/> 
+        </div>
+        <div className='snap-center'> 
+          <Projects/> 
+        </div>
       </div>
     </div>
   )

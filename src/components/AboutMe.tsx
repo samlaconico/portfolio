@@ -1,6 +1,6 @@
 import React from "react"
 import background from '/src/assets/background2.gif'
-
+import portrait from '/src/assets/portrait.jpeg'
 
 export function AboutMe() {
     return (
@@ -11,14 +11,12 @@ export function AboutMe() {
                         <h1 className="text-3xl lg:text-4xl font-bold border-b-4 border-b-indigo-400 inline">About Me</h1>
                     </div>
                     <div>
-                        <img className="rounded-full border-indigo-400 border-4 my-6" src={"https://pbs.twimg.com/profile_images/1447111107412312068/OqwCuFnd_400x400.jpg"}></img>
+                        <img className="rounded-full border-indigo-400 border-4 h-96 my-6" src={portrait}></img>
                     </div>
                     <div className="mx-10 px-3 md:px-8 ">
                         <p>
-                            My name is Sam Laconico I am a software engineer located in the Los Angeles area.
-                            Although fans usually remember Light, L, or Ryuk's quotes, they're not the only characters capable of making astute observations or philosophical realizations. Soichiro may never be as iconic as his son, but his police officer career offers him an interesting insight into justice and criminal behavior.
-                            My name is Sam Laconico I am a software engineer located in the Los Angeles area.
-                            Although fans usually remember Light, L, or Ryuk's quotes, they're not the only characters capable of making astute observations or philosophical realizations. Soichiro may never be as iconic as his son, but his police officer career offers him an interesting insight into justice and criminal behavior.
+                            My name is Sam Laconico. I am a software engineer/web developer located in the Los Angeles area with a B.S of Computer Science from California State University Northridge. I've got a huge passion for creating and love putting that energy into 
+                            creating websites, apps, and games using my background with programming. I love working in teams and collaborating with people on projects!
                         </p>
                     </div>
                 </div>

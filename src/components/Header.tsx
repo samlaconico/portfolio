@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useRef} from "react"
-import { TiThMenu } from "react-icons/ti";
+import { TiHome, TiThMenu } from "react-icons/ti";
 
 
 type HeaderParams = {
@@ -38,16 +38,16 @@ export function Header({title}:HeaderParams) {
         <div 
             className={
                 bg 
-                    ? "top-0 px-2 z-50 fixed w-full flex text-white items-center md:flex-row transition-all bg-neutral-900 ease-in-out" 
-                    : "top-0 px-2 z-50 fixed w-full flex text-white items-center md:flex-row transition-all ease-in-out"
+                    ? "top-0 px-2 py-5 z-50 fixed w-full flex text-white items-center md:flex-row transition-all bg-neutral-900 ease-in-out" 
+                    : "top-0 px-2 py-5 z-50 fixed w-full flex text-white items-center md:flex-row transition-all ease-in-out"
             }
         >
             
             <button 
                 onClick={() => {const element = document.getElementById('home'); element?.scrollIntoView({behavior: 'smooth'})}} 
-                className="text-3xl px-7 py-5 font-bold transition-all ease-in-out"
+                className="text-3xl mx-7 font-bold transition-all ease-in-out"
             >
-                {title}
+                <TiHome></TiHome>
             </button>
             
             {/*default navigator*/}
@@ -64,6 +64,16 @@ export function Header({title}:HeaderParams) {
 
                 <button 
                     onClick={() => {
+                        const element = document.getElementById('skills'); 
+                        element?.scrollIntoView({behavior: 'smooth'})
+                    }} 
+                    className="px-3 hover:underline underline-offset-[6px] hover:drop-shadow-glow transition ease-in-out duration-1000"
+                >
+                    Skills
+                </button>
+
+                <button 
+                    onClick={() => {
                         const element = document.getElementById('projects'); 
                         element?.scrollIntoView({behavior: 'smooth'})
                     }} 
@@ -71,23 +81,18 @@ export function Header({title}:HeaderParams) {
                 >
                     Projects
                 </button>
-
-                <button 
-                    onClick={() => {
-                        const element = document.getElementById('about-me'); 
-                        element?.scrollIntoView({behavior: 'smooth'})
-                    }} 
+                
+                <a 
+                    href="https://drive.google.com/file/d/1Wb-g9G1K0KhZZPGCyh-iiu_UYYB2-l8i/view" 
                     className="px-3 hover:underline underline-offset-[6px] hover:drop-shadow-glow transition ease-in-out duration-1000"
-                >
-                    Links
-                </button>
-
-                <a href="" className="px-3 hover:underline underline-offset-[6px] hover:drop-shadow-glow transition ease-in-out duration-1000">Resume</a>
+                >     
+                    Resume
+                </a>
             </div>
 
             <div 
                 onClick={setNav} 
-                className="hover:cursor-pointer z-50 ml-auto pr-5 text-4xl lg:hidden"
+                className="hover:cursor-pointer z-50 ml-auto mr-5 text-4xl lg:hidden"
             >
                 <TiThMenu/>
             </div>
@@ -111,6 +116,17 @@ export function Header({title}:HeaderParams) {
                 <li className="py-6 font-bold text-3xl">
                     <button 
                         onClick={() => {
+                            const element = document.getElementById('skills'); 
+                            element?.scrollIntoView({behavior: 'smooth'})
+                        }} 
+                        className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000 hover:underline underline-offset-[6px]"
+                    >
+                        Skills
+                    </button>
+                </li>
+                <li className="py-6 font-bold text-3xl">
+                    <button 
+                        onClick={() => {
                             const element = document.getElementById('projects'); 
                             element?.scrollIntoView({behavior: 'smooth'})
                         }} 
@@ -120,19 +136,8 @@ export function Header({title}:HeaderParams) {
                     </button>
                 </li>
                 <li className="py-6 font-bold text-3xl">
-                    <button 
-                        onClick={() => {
-                            const element = document.getElementById('about-me');
-                            element?.scrollIntoView({behavior: 'smooth'})
-                        }} 
-                        className="px-3 hover:font-bold hover:drop-shadow-glow transition ease-in-out duration-1000 hover:underline underline-offset-[6px]"
-                    >
-                        Links
-                    </button>
-                </li>
-                <li className="py-6 font-bold text-3xl">
                     <a 
-                        href="" 
+                        href="https://drive.google.com/file/d/1Wb-g9G1K0KhZZPGCyh-iiu_UYYB2-l8i/view" 
                         className="px-3 hover:underline underline-offset-[6px] hover:drop-shadow-glow transition ease-in-out duration-1000"
                     >
                         Resume

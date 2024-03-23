@@ -20,19 +20,28 @@ export function ProjectCards({title, img, gif, description, tech}:ProjectCardPar
     }
 
     return (
-        <div className="bg-white max-w-[35rem] h-[30rem] rounded-xl items-start content-start text-center justify-start flex-col shadow-xl transition-all duration-150 hover:scale-105 ease-in-out">
+        <div 
+            className="bg-white max-w-[35rem] h-[30rem] rounded-xl text-center flex-col shadow-xl transition-all duration-150 hover:scale-105 ease-in-out"
+        >
             <img 
                 className="object-cover object-center drp  w-full h-3/5 rounded-t-xl" 
+                src={image}
                 onMouseOut={changeImage} 
                 onMouseOver={changeImage} 
-                src={image}>
+            >        
             </img>
-            <h1 className="text-3xl max-h-[100px] font-semibold pt-2">
+            <h1 className="text-2xl max-h-[100px] font-semibold pt-2">
                 {title}
             </h1>
-            <p className="overflow-y-scroll max-h-[8rem] py-2 px-6 font-light">
-                {description}
-            </p>
+            <div className="overflow-y-auto overflow-x-hidden no-scrollbar max-h-[8rem] px-3 font-light">
+                <h3 className="font-medium">
+                        Made with {tech}
+                </h3>
+                <p className="pt-1">
+                    {description}
+                </p>
+            </div>
+            
         </div>
     )
 }
