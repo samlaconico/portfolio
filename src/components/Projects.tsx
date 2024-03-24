@@ -14,21 +14,24 @@ const ProjectData = [
         description: "PetSpace is a mobile app for both iOS and Android based around streamlining the application process for fostering both cats and dogs.",
         tech: "React Native, Node.js, Firebase, Expo, Git",
         img: petspace,
-        gif: petspacegif
+        gif: petspacegif,
+        link: ""
     },
     {
         name: "The Last Patient",
         description: "The Last Patient is a 90s style survival horror game, reminiscent of PSX classics like Resident Evil and Silent Hill. ",
         tech: "Unity, Blender, C#, Git LFS",
         img: horrorgame,
-        gif: horrorgamegif
+        gif: horrorgamegif,
+        link:""
     },
     {
         name: "Anime Theme Search",
         description: "Search and instantly play a wide range of anime openings and endings.",
         tech: "React, Tailwind, JSON:API",
         img: anithemes,
-        gif: anithemesgif
+        gif: anithemesgif,
+        link:"https://samlaconico.github.io/anithemes/"
     }
 ]
 
@@ -58,6 +61,7 @@ export function Projects() {
                             description={item.description}
                             tech={item.tech}
                             key={idx}
+                            link={item.link}
                         />
                     ))}
                 </div>
