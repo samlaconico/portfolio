@@ -13,7 +13,7 @@ import csharpimg from '/src/assets/csharp.png'
 import unityimg from '/src/assets/unity.png'
 import background from '/src/assets/background4.gif'
 
-const TileStyling:string = "bg-neutral-700 drop-shadow-lg rounded-md h-36 w-36 md:h-56 md:w-56 mx-4 hover:drop-shadow-glow transition-all  duration-150 hover:scale-105 hover:rotate-2 ease-in-out"
+const TileStyling:string = "bg-neutral-700 drop-shadow-lg rounded-2xl h-36 w-36 md:h-56 md:w-56 mx-4 hover:drop-shadow-glow transition-all  duration-150 hover:scale-105 hover:rotate-2 ease-in-out"
 
 export function Skills() {
     return (
@@ -27,51 +27,51 @@ export function Skills() {
             <div className="grid-cols-2 md:grid-cols-4 grid gap-y-10 place-items-center w-auto text-center mx-auto z-10">
                 <div className={TileStyling}>
                     <h3 className="text-white font-extrabold py-2">HTML5</h3>
-                    <img className="px-8" src={htmlimg}></img>
+                    <img className="px-8 drop-shadow-xl" src={htmlimg}></img>
                 </div>
                 <div className={TileStyling}>
                     <h3 className="text-white font-extrabold py-2">CSS</h3>
-                    <img className="px-8" src={cssimg}></img>
+                    <img className="px-8 drop-shadow-xl" src={cssimg}></img>
                 </div>
                 <div className={TileStyling}>
                     <h3 className="text-white font-extrabold py-2">Javascript</h3>
-                    <img className="px-8" src={javascriptimg}></img>
+                    <img className="px-8 drop-shadow-xl" src={javascriptimg}></img>
                 </div>
                 <div className={TileStyling}>
                     <h3 className="text-white font-extrabold py-2">React</h3>
-                    <img className="px-8" src={reactimg}></img>
+                    <img className="px-8 drop-shadow-xl" src={reactimg}></img>
                 </div>
                 <div className={TileStyling}>
                     <h3 className="text-white font-extrabold py-2">C++</h3>
-                    <img className="px-8 " src={cppimg}></img>
+                    <img className="px-8 drop-shadow-xl " src={cppimg}></img>
                 </div>
                 <div className={TileStyling}>
                     <h3 className="text-white font-extrabold py-2">Java</h3>
-                    <img className="px-8" src={javaimg}></img>
+                    <img className="px-8 drop-shadow-xl" src={javaimg}></img>
                 </div>
                 <div className={TileStyling}>
                     <h3 className="text-white font-extrabold py-2">Tailwind</h3>
-                    <img className="px-8" src={tailwindimg}></img>
+                    <img className="px-8 drop-shadow-xl" src={tailwindimg}></img>
                 </div>
                 <div className={TileStyling}>
                     <h3 className="text-white font-extrabold py-2">Github</h3>
-                    <img className="px-8" src={githubimg}></img>
+                    <img className="px-8 drop-shadow-xl" src={githubimg}></img>
                 </div>
                 <div className={TileStyling}>
                     <h3 className="text-white font-extrabold py-2">Python</h3>
-                    <img className="px-8" src={pythtonimg}></img>
+                    <img className="px-8 drop-shadow-xl" src={pythtonimg}></img>
                 </div>
                 <div className={TileStyling}>
                     <h3 className="text-white font-extrabold py-2">MongoDB</h3>
-                    <img className="px-8" src={mongodbimg}></img>
+                    <img className="px-8 drop-shadow-xl" src={mongodbimg}></img>
                 </div>
                 <div className={TileStyling}>
                     <h3 className="text-white font-extrabold py-2">C#</h3>
-                    <img className="px-8" src={csharpimg}></img>
+                    <img className="px-8 drop-shadow-xl" src={csharpimg}></img>
                 </div>
                 <div className={TileStyling}>
                     <h3 className="text-white font-extrabold py-2">Unity</h3>
-                    <img className="px-8" src={unityimg}></img>
+                    <img className="px-8 drop-shadow-xl" src={unityimg}></img>
                 </div>
             </div>
 

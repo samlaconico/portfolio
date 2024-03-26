@@ -11,7 +11,7 @@ export function AboutMe() {
                         <h1 className="text-3xl lg:text-4xl font-bold border-b-4 border-b-indigo-400 inline">About Me</h1>
                     </div>
                     <div>
-                        <img className="rounded-full border-indigo-400 border-4 h-96 my-6" src={portrait}></img>
+                        <img className="rounded-full border-indigo-400 border-4 h-72 md:h-96 my-6" src={portrait}></img>
                     </div>
                     <div className="mx-10 px-3 md:px-8 ">
                         <p>

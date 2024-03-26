@@ -22,11 +22,11 @@ export function ProjectCards({title, img, gif, description, tech, link}:ProjectC
 
     return (
         <div 
-            className="bg-white max-w-[35rem] h-[30rem] rounded-xl text-center flex-col shadow-xl transition-all duration-150 hover:scale-105 ease-in-out"
+            className="bg-white max-w-[35rem] h-[35rem] rounded-2xl text-center flex-col shadow-xl transition-all duration-150 hover:scale-105 ease-in-out"
         >
             <a href={(link == "") ? "#" : link}>
                 <img 
-                    className="object-cover object-center drp  w-full h-3/5 rounded-t-xl" 
+                    className="object-cover object-center w-full h-3/5 rounded-t-2xl" 
                     src={image}
                     onMouseOut={changeImage} 
                     onMouseOver={changeImage} 
