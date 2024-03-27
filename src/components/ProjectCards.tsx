@@ -32,16 +32,18 @@ export function ProjectCards({title, img, gif, description, tech, link}:ProjectC
                     onMouseOver={changeImage} 
                 >        
                 </img>
-                <h1 className="text-2xl max-h-[100px] font-semibold pt-2">
-                    {title}
-                </h1>
-                <div className="overflow-y-auto overflow-x-hidden no-scrollbar max-h-[8rem] px-3 font-light">
-                    <h3 className="font-medium">
-                            Made with {tech}
-                    </h3>
-                    <p className="pt-1">
-                        {description}
-                    </p>
+                <div className="m-3">
+                    <h1 className="text-2xl max-h-[100px] font-semibold pt-2">
+                        {title}
+                    </h1>
+                    <div className="overflow-y-auto overflow-x-hidden no-scrollbar max-h-[8rem] px-3 font-light">
+                        <h3 className="font-medium">
+                                Made with {tech}
+                        </h3>
+                        <p className="pt-1">
+                            {description}
+                        </p>
+                    </div>
                 </div>
             </a>
         </div>

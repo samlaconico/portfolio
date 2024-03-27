@@ -15,7 +15,7 @@ const ProjectData = [
         tech: "React Native, Node.js, Firebase, Expo, Git",
         img: petspace,
         gif: petspacegif,
-        link: ""
+        link: "https://github.com/samlaconico/PetSpace"
     },
     {
         name: "The Last Patient",
